@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/* Regras */
+:root {
+    /* Paleta de cores */
+
+    --cor1:#032432;
+    --cor2:#054E6C;
+    --cor3:#066A97;
+    --cor4:#1B7AA2;
+    --cor5:#ABD7E8;
+}
+
+/* Full Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Style Group */
+
+a {
+    text-decoration: none;    
+}
+
+/* Code Flow */
+
+html, body {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    font: normal normal 1.05em/1.05em Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: white;
+    background-color: var(--cor2);
+}
+
+header > img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: var(--cor5);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 40px;
+}
+
+nav > a {
+    color: var(--cor1);
+    font-weight: bold;
+    flex: 0 0 150px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+/* Usar Grid-Layout para deixar as section centralizada */
+
+main {
+    
+}
+
+section {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.125);
+
+    /* Config. Teste*/
+    max-width: 1000px;
+    margin: 40px;
+    border: 1px solid black;
+    height: 300px;
+}
