@@ -49,11 +49,11 @@
     }
 
     .devs {
-        grid-area: 5 / 2 / -2 / -2;
+        grid-area: 5 / 1 / -2 / -1;
     }
 
     .footer {
-        grid-area: -2 / 2 / -1 / -2;
+        grid-area: -2 / 1 / -1 / -1;
     }
 
     /* Style Group*/
@@ -89,10 +89,10 @@
     }
 
     .devs {
-        grid-area: 4 / 2 / 5 / -2;
+        grid-area: 4 / 1 / 5 / -1;
     }
 
     .footer {
-        grid-area: -2 / 2 / -1 / -2;
+        grid-area: -2 / 1 / -1 / -1;
     }
 }

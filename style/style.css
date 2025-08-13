@@ -192,45 +192,104 @@ main div.pesq-flex p {
     text-indent: 0;
 }
 
-/* 4  - Desenvolvedores do Site */
+/* 4 - Inscreva-se */
+main #sub form {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+}
+
+main #sub fieldset {
+    border: none;
+}
+
+main #sub legend {
+    text-align: center;
+    color: var(--cor1);
+    font-weight: bold;
+    padding: 10px;
+}
+
+main #sub input {
+    border: none;
+    box-shadow: 0px 1px 0px black;
+}
+
+main #sub div {
+    text-align: start;
+    margin: 20px 10px;
+}
+
+main #sub textarea {
+    display: block;
+    resize: vertical;
+    max-width: 500px;
+}
+
+main #sub input[type="submit"] {
+    padding: 10px;
+    margin: 10px;
+    color: var(--cor6);
+    background-color: var(--cor3);
+}
+
+main #sub input[type="submit"]:hover {
+    background-color: rgb(17, 146, 17);
+}
+
+main #sub input[type="reset"] {
+    padding: 10px;
+    margin: 10px;
+    color: var(--cor6);
+    background-color: rgb(160, 14, 14);
+}
+
+main #sub input[type="reset"]:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+/* 5  - Desenvolvedores do Site */
 aside.devs {
     padding: 10px;
     background-color: var(--cor2);
     color: white;
 }
 
-/* 4.1 - Título da Sessão */
+/* 5.1 - Título da Sessão */
 aside.devs > h1 {
     text-align: center;
     padding: 10px;
     margin: 0 0 10px 0;
 }
 
+/* 5.2 - Container Flex*/
 aside.devs > div.devs-flex {
-    border: 1px solid white;
-
     display: flex;
     flex-flow: column nowrap;
     gap: 50px;
 }
 
+/* 5.2.1 - Item Flex*/
 aside.devs > div.devs-flex > div {
     border: 1px solid var(--cor5);
     background-color: var(--cor4);
     text-align: center;
     border-radius: 10px;
 
-    flex: 1 1 auto;
+    flex: auto;
 }
 
+/* 5.2.1 - Imagem*/
 aside.devs > div.devs-flex img {
+    margin-top: 10px;
     border-radius: 50%;
 }
 
+/* 5.2.1 - Título dos Item*/
 aside.devs > div.devs-flex h2 {
+    color: var(--cor6);
     margin: 20px;
 }
 
+/* 5.2.1 - Cargo da Equipe*/
 aside.devs > div.devs-flex p {
     margin: 0 0 10px 0 ;
 }

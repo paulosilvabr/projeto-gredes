@@ -100,12 +100,49 @@
                     </div>
                 </div>
             </section>
+            <section id="sub">
+                <h1>Inscreva-se</h1>
+                <form action="cadastro.php" method="post">
+                    <fieldset>
+                        <legend>Formulário de Inscrição</legend>
+                        <div>
+                            <label for="nome">Nome Completo: </label>
+                            <input type="text" name="nome" id="nome"
+                            minlength="10"
+                            maxlength="30"
+                            size="25"
+                            required
+                            placeholder="Nome Completo"
+                            >
+                        </div>
+                        <div>
+                            <label for="email">Email Institucional: </label>
+                            <input type="email" name="email" id="email"
+                            minlength="22"
+                            maxlength="40"
+                            size="25"
+                            pattern="^.+@estudante\.ifto\.edu\.br$" 
+                            required
+                            placeholder="seunome@estudante.ifto..edu.br"
+                            >
+                        </div>
+                        <div>
+                            <label for="text">Interesse em Redes: </label>
+                            <textarea name="text" id="text"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
         </main>
         <aside class="aside1">
-            
+            conteudo lateral
         </aside>
         <aside class="aside2">
-            
+            conteudo lateral
         </aside>
         <aside class="devs">
             <h1>Desenvolvedores do Site</h1>
