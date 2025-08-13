@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root {
-  --cor1: #001742;
+  --cor1: #052E40;
   --cor2: #064864;
   --cor3: #066A94;
   --cor4: #1B7AA2;
@@ -20,56 +20,62 @@
 /* Layout */
 
 .container {
-    display: grid;
-    grid-template: repeat(5, max-content) / 10px 1fr 10px;
-    gap: 10px;
+  display: grid;
+  grid-template: repeat(5, max-content) / 10px 1fr 10px;
+  gap: 10px;
 }
 
-.header {
-    grid-area: 1 / 1 / 2 / -1;
-}
-
-.nav {
-    grid-area: 2 / 1 / 3 / -1;
-}
-
-.main {
-    grid-area: 3 / 2 / 4 / -2;
-}
-
-.aside1 {
-    background-color: green;
-    
-    display: none;
-}
-
-.aside2 {
-    background-color: blue;
-    
-    display: none;
-}
-
-.devs {
-    background-color: black;
-    
-    grid-area: 4 / 1 / 5 / -1;
-}
-
-.footer {
-    background-color: burlywood;
-    
-    grid-area: 5 / 1 / -1 / -1;
-}
+/* Áreas do grid */
+.header  { grid-area: 1 / 1 / 2 / -1; }
+.nav     { grid-area: 2 / 1 / 3 / -1; }
+.main    { grid-area: 3 / 2 / 4 / -2; }
+.aside1  { background-color: green; display: none; }
+.aside2  { background-color: blue; display: none; }
+.devs    { grid-area: 4 / 1 / 5 / -1; }
+.footer  { grid-area: 5 / 1 / -1 / -1; }
 
 /* Style Group */
 
 a {
-    text-decoration: none;    
+  text-decoration: none;    
 }
+
+html, body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  font: normal normal 1.1em/1.1em Arial, Helvetica, sans-serif;
+}
+
+header,
+aside.devs > h1,
+footer,
+main div.pesq-flex h2 {
+  text-align: center;
+}
+
+header,
+aside.devs,
+aside.devs > h1,
+footer {
+  padding: 10px;
+}
+
+main div.pesq-flex > div,
+aside.devs > div.devs-flex > div {
+  border-radius: 10px;
+}
+
+aside.devs,
+footer {
+  color: white;
+}
+
 
 /* Code Flow */
 
 html, body {
+    scroll-behavior: smooth;
     width: 100%;
     height: 100%;
     font: normal normal 1.1em/1.1em Arial, Helvetica, sans-serif;
@@ -109,6 +115,7 @@ main {
 
 main h1 {
     color: var(--cor1);
+    text-align: start;
     padding: 10px;
 }
 
@@ -116,16 +123,121 @@ main p {
     text-indent: 20px;
 }
 
-main article.sobre {
+main > section {
+    margin: 20px 0;
+}
+
+/* 1 - Sobre o G-Redes */
+main article.sobre-flex {
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
 }
 
-main article.sobre > img{
+main article.sobre-flex > img{
     width: 100%;
+}
+
+
+/* 2 - Quem faz o G-Redes Acontecer */
+main article.orien-flex {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* 3 - Linhas de Pesquisas*/
+main div.pesq-flex {
+    margin: 20px 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* 3.1 - Card com Linhas de Pesquisas */
+main div.pesq-flex > div{
+    border: 1px solid var(--cor4);
+    background-color: var(--cor6);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
+    padding: 10px;
+    border-radius: 10px;
+    height: 200px;
+
+    flex: 0 1 250px;
+}
+
+/* 3.1.1 - Título do Card */
+main div.pesq-flex h2 {
+    text-align: center;
+    line-height: 1.1em;
+    color: var(--cor2);
+    margin: 0 0 10px 0 ;
+}
+
+/* 3.1.1.1 - Icons */
+main div.pesq-flex h2::before {
+    content: 'wifi';
+    font-family: 'Material Symbols Outlined';
+    margin: 0 8px 0 0;
+    vertical-align: center;
+}
+
+/* 3.1.3  - Parágrafo dos cards*/
+main div.pesq-flex p {
+    text-align: start;
+    text-indent: 0;
+}
+
+/* 4  - Desenvolvedores do Site */
+aside.devs {
+    padding: 10px;
+    background-color: var(--cor2);
+    color: white;
+}
+
+/* 4.1 - Título da Sessão */
+aside.devs > h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}
+
+aside.devs > div.devs-flex {
+    border: 1px solid white;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 50px;
+}
+
+aside.devs > div.devs-flex > div {
+    border: 1px solid var(--cor5);
+    background-color: var(--cor4);
+    text-align: center;
+    border-radius: 10px;
+
+    flex: 1 1 auto;
+}
+
+aside.devs > div.devs-flex img {
+    border-radius: 50%;
+}
+
+aside.devs > div.devs-flex h2 {
+    margin: 20px;
+}
+
+aside.devs > div.devs-flex p {
+    margin: 0 0 10px 0 ;
 }
 
 footer {
     background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
