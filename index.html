@@ -3,182 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
     <title>G-Redes</title>
-    <!-- Styles -->
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/mq.css">
-    <!-- Material Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <!--
+    <nav class="navegacao">
+        <div class="logos">
+            <img class="logo_nav" src="../image/logo-if-gredes-blue-sn.png" alt="">
+        </div>
+            
+        <a class="botao_navegacao" href="#inicio">Inicio</a>
+        <a class="botao_navegacao" href="#fundador">Fundador</a>
+        <a class="botao_navegacao" href="#cards">Cards</a>
+        <a class="botao_navegacao" href="#projetos">Projetos</a>
+        <a class="botao_navegacao" href="#inscrevase">Inscreva-se</a>
+        <a class="botao_navegacao" href="#contato">Contato</a>
+    </nav>
+
+    <header class="cabecalho">
+        <div class="frase_imagem">
+            <h1 class="frase_header">Conectando ideias, criando redes</h1>
+        
+            <img class="imagem_cabecalho" src="../image/pagina_inicial/logo if + Gredes white nome 1.png"blue alt="Logo G-Redes com IFTO" width="350px">
+        </div>
+    </header>
     
-    Header
+    <main>
+        
 
-    Nav (position: sticky)
+        <section id="inicio" class="painel_transparente">
+            <img class="imagem_painel_transparente" src="../image/pagina_inicial/Rectangle 5.png" alt="Imagem ilustrativa">
 
-    Resumo do G-Redes (saiba mais - link externo)
+            <div class="texto_painel_transparente">
+                <h1>O que é o G-Redes?</h1>
 
-    Quem faz o G-Redes (coordernador)
-
-    Linhas de Pesquisa
-
-    Banner Vitoria na China
-
-    Huawaii
-
-    Projetos
-
-    Inscrevase-se + formulário
-
-    Desenvolvedores do Site
-
-    Footer (Copyright)
-
-    -->
-    <div class="container">
-        <header class="header">
-            <img src="image/logos/logo-if-gredes-white.png" alt="Logo G-Redes e IFTO" width="300px">
-        </header>
-        <nav class="nav">
-            <a href="#sobre">Sobre</a>
-            <a href="#orien">Orientação</a>
-            <a href="#pesq">Pesquisas</a>
-            <a href="https://www.huawei.com/br/news/br/2022/ict-academy-mec" target="_blank">Huawaii</a>
-            <a href="#proj">Projetos</a>
-            <a href="#sub">Inscreva-se</a>
-        </nav>
-        <main class="main">
-            <section id="sobre">
-                <article class="sobre-flex">
-                    <div>
-                        <h1>G-Redes</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quibusdam reiciendis delectus cupiditate voluptatibus impedit ducimus dignissimos quae sint sapiente provident molestiae ipsum, ullam quisquam nemo esse, neque doloremque accusantium.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa culpa, eius beatae, molestiae ut facilis numquam iusto, ex atque voluptates necessitatibus adipisci distinctio aut obcaecati quos sed harum in?
-                        </p>
-                    </div>
-                    <img src="image/china.png" alt="Alunos do G-Redes">
-                </article>
-            </section>
-            <section id="orien">
-                <article class="orien-flex">
-                    <div>
-                            <h1>Quem Faz o G-Redes Acontecer?</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quibusdam reiciendis delectus cupiditate voluptatibus impedit ducimus dignissimos quae sint sapiente provident molestiae ipsum, ullam quisquam nemo esse, neque doloremque accusantium.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa culpa, eius beatae, molestiae ut facilis numquam iusto, ex atque voluptates necessitatibus adipisci distinctio aut obcaecati quos sed harum in?
-                            </p>
-                        </div>
-                        <img src="image/claudio.png" alt="Alunos do G-Redes">
-                </article>
-            </section>
-            <section id="pesq">
-                <h1>Linhas de Pesquisa</h1>
-                <div class="pesq-flex">
-                    <div>
-                        <h2>Linha de pesquisa 1</h2>
-                        <p>Otimização de tráfego, BGP, OSPF, MPLS e redes de alto desempenho.</p>
-                    </div>
-                    <div>
-                        <h2>Linha de pesquisa 2</h2>
-                        <p>Otimização de tráfego, BGP, OSPF, MPLS e redes de alto desempenho.</p>
-                    </div>
-                    <div>
-                        <h2>Linha de pesquisa 3</h2>
-                        <p>Otimização de tráfego, BGP, OSPF, MPLS e redes de alto desempenho.</p>
-                    </div>
-                    <div>
-                        <h2>Linha de pesquisa 4</h2>
-                        <p>Otimização de tráfego, BGP, OSPF, MPLS e redes de alto desempenho.</p>
-                    </div>
-                </div>
-            </section>
-            <section id="sub">
-                <h1>Inscreva-se</h1>
-                <form action="cadastro.php" method="post">
-                    <fieldset>
-                        <legend>Formulário de Inscrição</legend>
-                        <div>
-                            <label for="nome">Nome Completo: </label>
-                            <input type="text" name="nome" id="nome"
-                            minlength="10"
-                            maxlength="30"
-                            size="25"
-                            required
-                            placeholder="Nome Completo"
-                            >
-                        </div>
-                        <div>
-                            <label for="email">Email Institucional: </label>
-                            <input type="email" name="email" id="email"
-                            minlength="22"
-                            maxlength="40"
-                            size="25"
-                            pattern="^.+@estudante\.ifto\.edu\.br$" 
-                            required
-                            placeholder="seunome@estudante.ifto..edu.br"
-                            >
-                        </div>
-                        <div>
-                            <label for="text">Interesse em Redes: </label>
-                            <textarea name="text" id="text"></textarea>
-                        </div>
-                        <div>
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Limpar">
-                        </div>
-                    </fieldset>
-                </form>
-            </section>
-        </main>
-        <aside class="aside1">
-            conteudo lateral
-        </aside>
-        <aside class="aside2">
-            conteudo lateral
-        </aside>
-        <aside class="devs">
-            <h1>Desenvolvedores do Site</h1>
-            <div class="devs-flex">
-                <div>
-                    <img src="image/team/foto-perfil.jpg" alt="Foto Perfil - Paulo Ricardo" width="130px" height="130px">
-                    <h2>Paulo Ricardo S. Silva</h2>
-                    <p>Desenvolvedor Full-Steck Senior</p>
-                </div>
-                <div>
-                    <img src="image/team/foto-perfil.jpg" alt="Foto Perfil - Paulo Ricardo" width="130px" height="130px">
-                    <h2>Paulo Ricardo S. Silva</h2>
-                    <p>Desenvolvedor Full-Steck Senior</p>
-                </div>
-                <div>
-                    <img src="image/team/foto-perfil.jpg" alt="Foto Perfil - Paulo Ricardo" width="130px" height="130px">
-                    <h2>Paulo Ricardo S. Silva</h2>
-                    <p>Desenvolvedor Full-Steck Senior</p>
-                </div>
-                <div>
-                    <img src="image/team/foto-perfil.jpg" alt="Foto Perfil - Paulo Ricardo" width="130px" height="130px">
-                    <h2>Paulo Ricardo S. Silva</h2>
-                    <p>Desenvolvedor Full-Steck Senior</p>
-                </div>
-                <div>
-                    <img src="image/team/foto-perfil.jpg" alt="Foto Perfil - Paulo Ricardo" width="130px" height="130px">
-                    <h2>Paulo Ricardo S. Silva</h2>
-                    <p>Desenvolvedor Full-Steck Senior</p>
-                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sapiente aliquid praesentium nulla voluptatem at magnam, ipsum quas nobis blanditiis repudiandae laborum temporibus dolorum corrupti illo omnis ducimus mollitia facilis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias officiis a dolorem rem odio itaque, dolorum molestiae incidunt deserunt, voluptate cupiditate animi odit earum aspernatur obcaecati maxime sed ipsum et! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa accusantium odio, porro repudiandae, eum eligendi possimus quae inventore alias saepe corrupti, sequi culpa aliquid autem maiores labore at. Illum.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui porro ipsum recusandae hic quos aut maiores doloribus autem eligendi. Repellat quisquam, aut ipsum doloribus est quia quas eos veniam possimus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nobis expedita saepe quae sint cumque ad earum, eius commodi tenetur provident ullam ea illo voluptatem explicabo repellat perferendis. Cupiditate, dolores?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate maxime, architecto molestias itaque ipsum magnam totam accusamus veniam! Pariatur natus quis eum dicta dolorem deleniti ad temporibus. Impedit, perspiciatis quaerat.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ex nulla quia nam possimus atque a beatae, quo hic dolores dicta magnam autem deserunt iste ut enim consectetur minus aliquid!
+                </p>
             </div>
-        </aside>
-        <footer class="footer">
-            <p>Equipe de Desenvolvimento Web - IFTO</p>
-            <p>Curso Superior de Sistema para Interenet</p>
-            <p>2025</p>
-        </footer>
-    </div>
+            
+        </section>
+
+        <section id="fundador" class="painel_fundo_azul">
+            <div class="texto_painel_fundo_azul">
+                <h1>Quem é o professor?</h1>
+
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ea ratione. Perferendis distinctio modi autem tempora placeat sit facilis amet, officiis dignissimos atque quisquam vel neque, inventore incidunt, voluptatibus odit.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ea ratione. Perferendis distinctio modi autem tempora placeat sit facilis amet, officiis dignissimos atque quisquam vel neque, inventore incidunt, voluptatibus odit.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ea ratione. Perferendis distinctio modi autem tempora placeat sit facilis amet, officiis dignissimos atque quisquam vel neque, inventore incidunt, voluptatibus odit.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ea ratione. Perferendis distinctio modi autem tempora placeat sit facilis amet, officiis dignissimos atque quisquam vel neque, inventore incidunt, voluptatibus odit.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ea ratione. Perferendis distinctio modi autem tempora placeat sit facilis amet, officiis dignissimos atque quisquam vel neque, inventore incidunt, voluptatibus odit.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ea ratione. Perferendis distinctio modi autem tempora placeat sit facilis amet, officiis dignissimos atque quisquam vel neque, inventore incidunt, voluptatibus odit.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ea ratione. Perferendis distinctio modi autem tempora placeat sit facilis amet, officiis dignissimos atque quisquam vel neque, inventore incidunt, voluptatibus odit.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ea ratione. Perferendis distinctio modi autem tempora placeat sit facilis amet, officiis dignissimos atque quisquam vel neque, inventore incidunt, voluptatibus odit.
+                </p>
+            </div>
+
+            <img class="imagem_painel_azul" src="../image/pagina_inicial/Rectangle 5.png" alt="Imagem ilustrativa.">
+        </section>
+
+        <section id="cards" class="area_cards">
+            <div class="texto_cards">
+                <h2>Pipipopo</h2>
+
+                <p>Conheça mais nossos cards</p>
+            </div>
+
+            <div class="conjunto_cards">
+                <div class="cards">
+                    <img class="imagem_cards" src="../image/pagina_inicial/Rectangle 5.png" alt="">
+
+                    <div class="texto_card">
+                        <h3>bla bla bla</h3>
+
+                        <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi excepturi obcaecati eos.
+                        </p>
+
+                        <a class="botao_card" href="">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <img class="imagem_cards" src="../image/pagina_inicial/Rectangle 5.png" alt="">
+
+                    <div class="texto_card">
+                        <h3>bla bla bla</h3>
+
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi excepturi obcaecati eos.
+                        </p>
+
+                        <a class="botao_card" href="">Saiba mais</a>
+
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <img class="imagem_cards" src="../image/pagina_inicial/Rectangle 5.png" alt="">
+                        <div class="texto_card">
+                            <h3>bla bla bla</h3>
+                            
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi excepturi obcaecati eos.
+                            </p>
+
+                            <a class="botao_card" href="">Saiba mais</a>
+                        </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projetos" class="painel_transparente"> 
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using 
+            </p>
+        </section>
+
+        <section id="inscrevase" class="inscreva-se">
+            <div class="texto_junta-se">
+                <h1>Junte-se ao G-Redes</h1>
+
+                <h2>
+                    O G-Redes Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit recusandae quod explicabo voluptates minima
+                </h2>
+            </div>
+
+            <a class="botao_inscreva-se" href="">Inscreva-se</a>
+        </section>
+
+        <section id="contato"></section>
+    </main>
 </body>
 </html>

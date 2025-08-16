@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
+/* Regras */
 :root {
-  --cor1: #052E40;
-  --cor2: #064864;
-  --cor3: #066A94;
-  --cor4: #1B7AA2;
-  --cor5: #D2E7FF;
-  --cor6: #DEF5FF;
+    /* Paleta de cores */
+
+    --cor1:#032432;
+    --cor2:#054E6C;
+    --cor3:#066A97;
+    --cor4:#1B7AA2;
+    --cor5:#ABD7E8;
 }
 
 /* Full Reset */
@@ -14,289 +16,220 @@
 * {
     padding: 0;
     margin: 0;
+}
+
+body {
     box-sizing: border-box;
+    font: normal normal 1.05em Arial, Helvetica, sans-serif;
+
+    min-width: 300px;
+
+    margin: auto;
 }
-
-/* Layout */
-
-.container {
-  display: grid;
-  grid-template: repeat(5, max-content) / 10px 1fr 10px;
-  gap: 10px;
-}
-
-/* Áreas do grid */
-.header  { grid-area: 1 / 1 / 2 / -1; }
-.nav     { grid-area: 2 / 1 / 3 / -1; }
-.main    { grid-area: 3 / 2 / 4 / -2; }
-.aside1  { background-color: green; display: none; }
-.aside2  { background-color: blue; display: none; }
-.devs    { grid-area: 4 / 1 / 5 / -1; }
-.footer  { grid-area: 5 / 1 / -1 / -1; }
 
 /* Style Group */
 
 a {
-  text-decoration: none;    
+    text-decoration: none;    
 }
-
-html, body {
-  scroll-behavior: smooth;
-  width: 100%;
-  height: 100%;
-  font: normal normal 1.1em/1.1em Arial, Helvetica, sans-serif;
-}
-
-header,
-aside.devs > h1,
-footer,
-main div.pesq-flex h2 {
-  text-align: center;
-}
-
-header,
-aside.devs,
-aside.devs > h1,
-footer {
-  padding: 10px;
-}
-
-main div.pesq-flex > div,
-aside.devs > div.devs-flex > div {
-  border-radius: 10px;
-}
-
-aside.devs,
-footer {
-  color: white;
-}
-
 
 /* Code Flow */
 
-html, body {
+/* html, body {
     scroll-behavior: smooth;
     width: 100%;
     height: 100%;
-    font: normal normal 1.1em/1.1em Arial, Helvetica, sans-serif;
+    font: normal normal 1.05em/1.05em Arial, Helvetica, sans-serif;
+} */
+
+.cabecalho {
+    color: #F6F6F6;
+    background-color: #054E6C;
+    padding: 30px;
+    padding: 90px;
 }
 
-header {
-    background-color: var(--cor2);
-    text-align: center;
-    padding: 10px;
+.frase_imagem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav {
+.frase_header {
+    width: 500px;
+    text-align: right;
+    font-size: 52px;
+    margin-left: 10%;
+}
+
+.imagem_cabecalho {
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin-right: 10%;
+}
+
+.navegacao {
     position: sticky;
     top: 0;
-    background-color: var(--cor5);
-    padding: 5px;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-nav > a {
-    color: var(--cor1);
-    padding: 10px;
-}
-
-nav > a:hover {
-    color: white;
-    background-color: var(--cor4);
-    border-radius: 40px;
-}
-
-main {
-    text-align: justify;
-}
-
-main h1 {
-    color: var(--cor1);
-    text-align: start;
-    padding: 10px;
-}
-
-main p {
-    text-indent: 20px;
-}
-
-main > section {
-    margin: 20px 0;
-}
-
-/* 1 - Sobre o G-Redes */
-main article.sobre-flex {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 20px;
-}
-
-main article.sobre-flex > img{
-    width: 100%;
-}
-
-
-/* 2 - Quem faz o G-Redes Acontecer */
-main article.orien-flex {
-    display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-
-/* 3 - Linhas de Pesquisas*/
-main div.pesq-flex {
-    margin: 20px 0;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-/* 3.1 - Card com Linhas de Pesquisas */
-main div.pesq-flex > div{
-    border: 1px solid var(--cor4);
-    background-color: var(--cor6);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
-    padding: 10px;
-    border-radius: 10px;
-    height: 200px;
-
-    flex: 0 1 250px;
-}
-
-/* 3.1.1 - Título do Card */
-main div.pesq-flex h2 {
     text-align: center;
-    line-height: 1.1em;
-    color: var(--cor2);
-    margin: 0 0 10px 0 ;
+    background-color: #D2E7EF;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 4px;
 }
 
-/* 3.1.1.1 - Icons */
-main div.pesq-flex h2::before {
-    content: 'wifi';
-    font-family: 'Material Symbols Outlined';
-    margin: 0 8px 0 0;
-    vertical-align: center;
-}
-
-/* 3.1.3  - Parágrafo dos cards*/
-main div.pesq-flex p {
-    text-align: start;
-    text-indent: 0;
-}
-
-/* 4 - Inscreva-se */
-main #sub form {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
-}
-
-main #sub fieldset {
-    border: none;
-}
-
-main #sub legend {
-    text-align: center;
-    color: var(--cor1);
+.botao_navegacao {
+    color: #1B7AA2;
+    font-size: 20px;
     font-weight: bold;
-    padding: 10px;
+    flex: 0 0 150px;
+    align-content: center;
 }
 
-main #sub input {
-    border: none;
-    box-shadow: 0px 1px 0px black;
+.botao_navegacao:hover {
+    text-decoration: underline;
+}    
+
+.logo_nav {
+    width: 120px;
+    height: 50px;
 }
 
-main #sub div {
-    text-align: start;
-    margin: 20px 10px;
-}
-
-main #sub textarea {
-    display: block;
-    resize: vertical;
-    max-width: 500px;
-}
-
-main #sub input[type="submit"] {
-    padding: 10px;
-    margin: 10px;
-    color: var(--cor6);
-    background-color: var(--cor3);
-}
-
-main #sub input[type="submit"]:hover {
-    background-color: rgb(17, 146, 17);
-}
-
-main #sub input[type="reset"] {
-    padding: 10px;
-    margin: 10px;
-    color: var(--cor6);
-    background-color: rgb(160, 14, 14);
-}
-
-main #sub input[type="reset"]:hover {
-    background-color: rgb(255, 0, 0);
-}
-
-/* 5  - Desenvolvedores do Site */
-aside.devs {
-    padding: 10px;
-    background-color: var(--cor2);
-    color: white;
-}
-
-/* 5.1 - Título da Sessão */
-aside.devs > h1 {
-    text-align: center;
-    padding: 10px;
-    margin: 0 0 10px 0;
-}
-
-/* 5.2 - Container Flex*/
-aside.devs > div.devs-flex {
+.painel_transparente {
     display: flex;
-    flex-flow: column nowrap;
-    gap: 50px;
+    flex-direction: row;
+    border: 1px solid #1B7AA2;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 1%;
+    box-shadow: 0px 0.5px 5px #b5b5b6;
 }
 
-/* 5.2.1 - Item Flex*/
-aside.devs > div.devs-flex > div {
-    border: 1px solid var(--cor5);
-    background-color: var(--cor4);
+.imagem_painel_transparente {
+    width: 700px;
+    height: 400px;
+}
+
+.texto_painel_transparente {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    gap: 4%;
+}
+
+.painel_fundo_azul {
+    display: flex;
+    background-color: #DEF5FF;
+    margin-top: 3%;
+    padding: 1%;
+    margin-top: 40px;
+    box-shadow: 0px 1px 5px #b5b5b6;
+}
+
+.texto_painel_fundo_azul {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    gap: 4%;
+}
+
+.imagem_painel_azul {
+    width: 300px;
+    height: 400px;
+}
+
+.imagem_cards {
+    width: 250px;
+    height: 150px;
+}
+
+.area_cards {
+    display: flex;
+    margin: 3%;
+    gap: 70px;
+    justify-content:space-around;
+}
+
+.texto_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.conjunto_cards {
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+    margin-right: 8%;
+}
+
+.cards {
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #DEF5FF;
+    gap: 54px;
+    padding: 4%;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.texto_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.botao_card {
+    width: 154px;
+    font-size: 16px;
     text-align: center;
-    border-radius: 10px;
-
-    flex: auto;
+    color: #F6F6F6;
+    background-color: #066A94;
+    padding: 14px 0;
+    border-radius: 20px;
+    font-weight:600;
+    font-style: italic;
 }
 
-/* 5.2.1 - Imagem*/
-aside.devs > div.devs-flex img {
-    margin-top: 10px;
-    border-radius: 50%;
+#projetos {
+    padding: 200px;
 }
 
-/* 5.2.1 - Título dos Item*/
-aside.devs > div.devs-flex h2 {
-    color: var(--cor6);
-    margin: 20px;
+.inscreva-se {
+    background-color: #1B7AA2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
 }
 
-/* 5.2.1 - Cargo da Equipe*/
-aside.devs > div.devs-flex p {
-    margin: 0 0 10px 0 ;
-}
-
-footer {
-    background-color: var(--cor1);
-    color: white;
+.texto_junta-se {
+    width: 700px;
     text-align: center;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #F6F6F6;
+}
+
+.botao_inscreva-se {
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 50px;
+    color: #052E40;
+    background-color: #F6F6F6;
+    width: 306px;
+    padding: 10px 0;
+    margin-top: 4%;
+
 }
