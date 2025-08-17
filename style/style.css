@@ -1,9 +1,13 @@
 @charset "UTF-8";
 
-/* Regras */
-:root {
-    /* Paleta de cores */
+/*  
+    ===============
+    PALETA DE CORES
+    ===============
+*/
 
+:root {
+    
     --cor1:#032432;
     --cor2:#054E6C;
     --cor3:#066A97;
@@ -11,36 +15,41 @@
     --cor5:#ABD7E8;
 }
 
-/* Full Reset */
+/*  
+    ==========
+    FULL RESET
+    ==========
+*/
 
 * {
     padding: 0;
     margin: 0;
 }
 
-body {
-    box-sizing: border-box;
-    font: normal normal 1.05em Arial, Helvetica, sans-serif;
-
-    min-width: 300px;
-
-    margin: auto;
+html, body {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    font: normal normal 1.1em Arial, Helvetica, sans-serif;
 }
 
-/* Style Group */
+
+/*  
+    ===========
+    STYLE GROUP
+    ===========
+*/
 
 a {
     text-decoration: none;    
 }
 
-/* Code Flow */
 
-/* html, body {
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 100%;
-    font: normal normal 1.05em/1.05em Arial, Helvetica, sans-serif;
-} */
+/*  
+    =========
+    CODE FLOW
+    =========
+*/
 
 .cabecalho {
     color: #F6F6F6;
