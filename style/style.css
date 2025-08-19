@@ -31,6 +31,8 @@ html, body {
     width: 100%;
     height: 100%;
     font: normal normal 1.1em Arial, Helvetica, sans-serif;
+    text-align: justify;
+    overflow-x: hidden;
 }
 
 
@@ -41,9 +43,13 @@ html, body {
 */
 
 a {
-    text-decoration: none;    
+    text-decoration: none; 
+    color: white;   
 }
 
+a:hover {
+    text-decoration: underline;
+}
 
 /*  
     =========
@@ -66,7 +72,7 @@ a {
 
 .frase_header {
     width: 500px;
-    text-align: right;
+    text-align: center;
     font-size: 52px;
     margin-left: 10%;
 }
@@ -83,11 +89,12 @@ a {
     top: 0;
     text-align: center;
     background-color: #D2E7EF;
+    padding: 4px;
+    
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     gap: 20px;
-    padding: 4px;
 }
 
 .botao_navegacao {
@@ -98,13 +105,11 @@ a {
     align-content: center;
 }
 
-.botao_navegacao:hover {
-    text-decoration: underline;
-}    
-
 .logo_nav {
-    width: 120px;
-    height: 50px;
+    position: fixed;
+    top: 5px;
+    left: 20px;
+    width: 100px;
 }
 
 .painel_transparente {
@@ -148,21 +153,23 @@ a {
 .imagem_painel_azul {
     width: 300px;
     height: 400px;
+
+    flex: 1 0 auto;
 }
 
-.imagem_cards {
+.imagem_pesquisa {
     width: 250px;
     height: 150px;
 }
 
-.area_cards {
+.area_pesquisa {
     display: flex;
     margin: 3%;
     gap: 70px;
     justify-content:space-around;
 }
 
-.texto_cards {
+.texto_pesquisa {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,14 +177,14 @@ a {
     gap: 32px;
 }
 
-.conjunto_cards {
+.conjunto_pesquisa {
     display: flex;
     flex-direction: row;
     gap: 54px;
     margin-right: 8%;
 }
 
-.cards {
+.pesquisa_card {
     width: 280px;
 
     display: flex;
@@ -241,4 +248,45 @@ a {
     padding: 10px 0;
     margin-top: 4%;
 
+}
+
+.sessao_contato {
+    padding: 5vh;
+    background-color: #105775;
+}
+
+.contato_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.contato_item {
+    background-color: var(--cor5);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    flex: 0 0 250px;
+}
+
+.contato_container_imagem {
+    border-radius: 50%;
+}
+
+.contato_container_nome {
+    color: var(--cor1);
+    font-size: 1em;
+}
+
+.contato_container_cargo {
+    color: var(--cor1);
+    font-style: italic;
+}
+
+.footer {
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
 }
