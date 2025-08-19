@@ -56,6 +56,10 @@ h1 {
     color: var(--cor3);
 }
 
+p {
+    text-indent: 30px;
+}
+
 /*  
     =========
     CODE FLOW
@@ -156,10 +160,14 @@ h1 {
     gap: 20px;
 }
 
+.texto_painel_transparente > h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
 .texto_painel_transparente > p {
     font-size: 1.2em;
     line-height: 1.5em;
-    text-indent: 30px;
 }
 
 .painel_fundo_azul {
@@ -195,34 +203,40 @@ h1 {
 }
 
 .sessao_pesquisa {
-    margin: 20px;
+    margin: 50px 20px;
 }
 
 .pesquisa_titulo {
     text-align: center;
-    margin: 50px 0 30px 0;
+    margin-bottom: 30px;
 }
 
 .conjunto_pesquisa {
     display: flex;
     flex-flow: row nowrap;
-    gap: 40px;  
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .pesquisa_card {
     border-radius: 20px;
     padding: 20px ;
     background-color: #DEF5FF;
+    height: 480px;
+    text-align: start;
 
-    flex: flex;
-}
+    flex: 0 1 200px;
 
-.texto_card {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    flex-flow: row wrap;
+    align-content: space-between;
 }
+
+.pesquisa_card  h3 {
+    text-align: center;
+}
+
 
 .botao_card {
     width: 154px;
@@ -234,6 +248,7 @@ h1 {
     border-radius: 20px;
     font-weight:600;
     font-style: italic;
+    
 }
 
 .inscreva-se {
