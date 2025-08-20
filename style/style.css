@@ -65,6 +65,7 @@ img {
 #inicio,
 #pesquisa,
 #huawai,
+#premio,
 #coordenadores,
 #inscrevase {
     scroll-margin-top: 100px;
@@ -179,8 +180,9 @@ img {
 }
 
 .texto_painel_transparente > h1 {
-    font-size: 2em;
     text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
     color: var(--azul-medio);
 }
 
@@ -280,7 +282,7 @@ img {
 }
 
 .sessao_pesquisa {
-    margin: 50px 20px;
+    margin: 50px 20px 100px 20px;
 }
 
 .pesquisa_titulo {
@@ -301,16 +303,21 @@ img {
     border-radius: 20px;
     padding: 20px ;
     background-color: var(--azul-pastel);
-    height: 480px;
     text-align: start;
+    height: 550px;
     flex: 0 1 200px;
     display: flex;
     flex-flow: row wrap;
     align-content: space-between;
+    gap: 20px;
 }
 
 .pesquisa_card  h3 {
     text-align: center;
+}
+
+.pesquisa_card  p {
+    text-indent: 10px;
 }
 
 .botao_card {
@@ -370,6 +377,7 @@ img {
 .sessao_contato {
     padding: 5vh;
     background-color: #105775;
+    margin-bottom: 100px;
 }
 
 .contato_container {
@@ -383,6 +391,7 @@ img {
     border-radius: 20px;
     text-align: center;
     padding: 20px;
+
     flex: 0 0 250px;
 }
 
@@ -392,6 +401,7 @@ img {
 
 .contato_container_cargo {
     font-style: italic;
+    text-align: center;
 }
 
 .footer {
