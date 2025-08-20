@@ -109,7 +109,7 @@ img {
 
 .cabecalho {
     color: white;
-    background-color: var(--cor2);
+    background-image: radial-gradient(ellipse, var(--cor2) 50%, #04394e);
     padding: 90px;
 }
 
@@ -138,7 +138,8 @@ img {
     position: sticky;
     top: 0;
     text-align: center;
-    background-color: var(--cor12);
+    /*background-color: var(--cor12);*/
+    background-image: linear-gradient(to bottom, #a8d8eb 20%, var(--cor11));
     padding: 16px;
 
     /* Flexbox */
@@ -204,7 +205,7 @@ img {
 }
 
 .texto_painel_transparente span {
-  background: linear-gradient(to bottom, var(--cor3) 40%, var(--cor5)); /* do início ao fim do gradiente */
+  background: linear-gradient(to bottom, var(--cor3) 40%, var(--cor5));
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -215,7 +216,7 @@ img {
     font-size: 1.2em;
     line-height: 1.5em;
 }
-/*--------------------------------------------------------------*/
+
 .sessao_huawai {
     background-color: #dcf4ff;
     width: 100vw;
@@ -244,14 +245,39 @@ img {
 .huawai_textos a {
     background-image: linear-gradient(to bottom, #902227, #EE2429, #F8A47B);
     color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .huawai_textos p {
     font-size: 1.2em;
     line-height: 1.5em;
 }
-/*--------------------------------------------------------------*/
+
+.sessao_china {
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 30px 0;
+
+    /* Flexbox */
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    gap: 50px;
+}
+
+.china_conteudo h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.china_conteudo p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
 .painel_fundo_azul {
     background-color: var(--cor12);
     margin-top: 40px;
@@ -347,7 +373,7 @@ img {
     align-items: center;
 }
 
-.texto_junta-se {
+.texto_junte_se {
     width: 700px;
     text-align: center;
     color: white;
@@ -358,6 +384,11 @@ img {
     gap: 40px;
 }
 
+.texto_junte_se h1 {
+    color: white;
+    font-size: 2em;
+}
+
 .botao_inscreva-se {
     font-size: 26px;
     font-weight: 400;
@@ -365,9 +396,17 @@ img {
     border-radius: 50px;
     color: var(--cor6);
     background-color: white;
+    border: 3px solid white;
     width: 306px;
     padding: 10px 0;
     margin-top: 4%;
+}
+
+.botao_inscreva-se:hover {
+    text-decoration: none;
+    color: white;
+    background-color: var(--cor2);
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
 .sessao_contato {
@@ -405,4 +444,8 @@ img {
     text-align: center;
     padding: 10px;
     font-size: 0.8em;
+}
+
+footer a:hover {
+    color: var(--cor10);
 }
