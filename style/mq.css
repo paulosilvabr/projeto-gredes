@@ -1,0 +1,86 @@
+@media screen and (max-width: 1200px) {
+    .navegacao {
+        padding: 0.5rem;
+        gap: 0;
+    }
+
+    .botao_navegacao {
+        opacity: 0;
+    }
+
+    .frase_imagem {
+        flex-direction: column-reverse;
+    }
+    
+    .frase_header {
+        font-size: 2.25rem;
+        margin: 2%;
+    }
+
+    .imagem_cabecalho {
+        width: 75%;
+        margin: 2%;
+    }
+
+    .painel_transparente {
+        flex-direction: column;
+    }
+
+    .imagem_painel_transparente {
+        width: 70%;
+        height: 70%;
+        margin-left: 8%;
+    }
+    
+    .texto_painel_transparente {
+        margin: 2%;
+        gap: 20px;
+    }
+    
+    .texto_painel_transparente h1 {
+        font-size: 32px;
+    }
+
+    .conjunto_pesquisa {
+        flex-direction: column;
+        margin: 8%;
+    }
+
+    .painel_fundo_azul {
+        flex-direction: column-reverse;
+    }
+
+    .texto_painel_fundo_azul {
+        margin: 2%;
+    }
+
+    .texto_painel_fundo_azul h1 {
+        font-size: 32px;
+    }
+
+    .imagem_painel_azul {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .texto_junte_se h2 {
+        width: 350px;
+        margin: auto;
+    }
+
+    .contato_container {
+        gap: 24px;
+        margin: 4%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imagem_cabecalho {
+        width: 150%;
+    }
+
+    footer a:hover {
+        color: #c3eeff; /* cor10 inline */
+    }
+}
