@@ -1,39 +1,46 @@
 @charset "UTF-8";
 
 /*  
-    ===============  
-    PALETA DE CORES  
-    ===============  
+    ===============
+    PALETA DE CORES
+    ===============
 */
 
 :root {
-    --azul-escuro: #032432;
-    --azul-medio: #066A97;
-    --azul-claro: #1B7AA2;
-    --azul-claro2: #ABD7E8;
-    --azul-pastel: #DEF5FF;
+    --cor1: #032432;
+    --cor2: #054E6C;
+    --cor3: #066A97;
+    --cor4: #1B7AA2;
+    --cor5: #ABD7E8;
+    --cor6: #052E40;
+    --cor7: #105775;
+    --cor8: #066A94;
+    --cor9: #b5b5b6;
+    --cor10: #c3eeff;
+    --cor11: #D2E7EF;
+    --cor12: #DEF5FF;
 }
 
 /*  
-    ==========  
-    FULL RESET  
-    ==========  
+    ==========
+    FULL RESET
+    ==========
 */
 
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
 }
 
 /*  
-    ==============  
-    GLOBAL CONFIG  
-    ==============  
+    ==============
+    GLOBAL CONFIG
+    ==============
 */
 
 html, body {
     scroll-behavior: smooth;
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     font: normal normal 1.1em Arial, Helvetica, sans-serif;
@@ -51,7 +58,7 @@ a:hover {
 }
 
 h1 {
-    color: var(--azul-medio);
+    color: var(--cor3);
 }
 
 p {
@@ -62,24 +69,18 @@ img {
     border-radius: 20px;
 }
 
-strong {
-    font-weight: bolder;
-    color: #003f5a;
-}
-
 #inicio,
 #pesquisa,
 #huawai,
-#premio,
 #coordenadores,
 #inscrevase {
     scroll-margin-top: 100px;
 }
 
 /*  
-    ===========  
-    STYLE GROUP  
-    ===========  
+    ===========
+    STYLE GROUP
+    ===========
 */
 
 .frase_header,
@@ -89,30 +90,31 @@ strong {
 
 .contato_container_nome,
 .contato_container_cargo {
-    color: var(--azul-escuro);
+    color: var(--cor1);
 }
 
 /*  
-    =========  
-    CODE FLOW  
-    =========  
+    =========
+    CODE FLOW
+    =========
 */
 
 .separador {
     margin: auto;
-    max-width: 1000px;
+    width: 1000px;
     height: 2px;
     border: none;
-    background-color: #c3eeff;
+    background-color: var(--cor10);
 }
 
 .cabecalho {
     color: white;
-    background-image: radial-gradient(ellipse, #106e94,#054E6C 70%, #04394e);
+    background-image: radial-gradient(ellipse, var(--cor2) 50%, #04394e);
     padding: 90px;
 }
 
 .frase_imagem {
+    /* Flexbox */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -135,8 +137,13 @@ strong {
     position: sticky;
     top: 0;
     text-align: center;
-    background-image: linear-gradient(to bottom, #bbe7f8 20%, #D2E7EF);
+  
+    /*background-color: var(--cor12);*/
+    background-image: linear-gradient(to bottom, #c3eeff 20%, var(--cor11));
     padding: 16px;
+
+    /* Flexbox */
+
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -144,14 +151,17 @@ strong {
 }
 
 .botao_navegacao {
-    color: var(--azul-claro);
+    color: var(--cor4);
     font-size: 20px;
     font-weight: bold;
     align-content: center;
+
+    /* Flexbox */
     flex: 0 0 auto;
 }
 
 .botao_navegacao[href="#pesquisa"] {
+    /* Flexbox */
     flex-basis: 190px;
 }
 
@@ -165,14 +175,25 @@ strong {
 
 .painel_transparente {
     max-width: 1500px;
-    margin: 50px auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    /* Flexbox */
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     gap: 50px;
 }
 
+.imagem_painel_transparente {
+    border-radius: 20px;
+}
+
 .texto_painel_transparente {
+    padding: 1%;
+
+    /* Flexbox */
     display: flex;
     flex-direction: column;
     padding: 1%;
@@ -181,19 +202,22 @@ strong {
 
 .paragrafo_texto_transparente {
     font-size: 1.25rem;
+    gap: 20px;
+
 }
 
 .texto_painel_transparente > h1 {
     font-size: 2em;
     text-align: center;
-    margin-bottom: 30px;
-    color: var(--azul-medio);
+    color: var(--cor3);
 }
 
 .texto_painel_transparente span {
-    background: linear-gradient(to bottom, var(--azul-medio) 40%, var(--azul-claro2));
-    -webkit-background-clip: text;
-    color: transparent;
+  background: linear-gradient(to bottom, var(--cor3) 40%, var(--cor5));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .texto_painel_transparente > p {
@@ -208,8 +232,12 @@ strong {
 
 .huawai_conteudo {
     max-width: 1500px;
-    margin: 50px auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 30px 0;
+
+    /* Flexbox */
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -235,8 +263,12 @@ strong {
 
 .sessao_china {
     max-width: 1500px;
-    margin: 100px auto;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
     padding: 30px 0;
+
+    /* Flexbox */
     display: flex;
     flex-flow: row-reverse nowrap;
     align-items: center;
@@ -255,24 +287,31 @@ strong {
 }
 
 .painel_fundo_azul {
-    background-color: var(--azul-pastel);
+    background-color: var(--cor12);
     margin-top: 40px;
     padding: 1%;
-    box-shadow: 0px 1px 5px #b5b5b6;
+    box-shadow: 0px 1px 5px var(--cor9);
+
+    /* Flexbox */
     display: flex;
 }
 
 .texto_painel_fundo_azul {
+    font-size: 1.2em;
     padding: 1%;
+
+    /* Flexbox */
     display: flex;
     flex-direction: column;
     gap: 4%;
-    margin-left: 6%;
+    margin-left: 8%;
 }
 
 .imagem_painel_azul {
     width: 400px;
     height: 400px;
+    margin-right: 10%;
+    /* Flexbox */
     flex: 1 0 auto;
 }
 
@@ -280,12 +319,13 @@ strong {
     display: block;
     margin: auto;
     width: 235px;
+    height: 200px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 
 .sessao_pesquisa {
-    margin: 50px 20px 100px 20px;
+    margin: 50px 20px;
 }
 
 .pesquisa_titulo {
@@ -295,6 +335,7 @@ strong {
 }
 
 .conjunto_pesquisa {
+    /* Flexbox */
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -305,16 +346,18 @@ strong {
 .pesquisa_card {
     border-radius: 20px;
     padding: 20px ;
-    background-color: var(--azul-pastel);
-    height: 580px;
+    background-color: var(--cor12);
+    height: 480px;
     text-align: start;
+
+    /* Flexbox */
     flex: 0 1 200px;
     display: flex;
     flex-flow: row wrap;
     align-content: space-between;
 }
 
-.pesquisa_card h3 {
+.pesquisa_card  h3 {
     text-align: center;
 }
 
@@ -323,7 +366,7 @@ strong {
     font-size: 16px;
     text-align: center;
     color: white;
-    background-color: #066A94;
+    background-color: var(--cor8);
     padding: 14px 0;
     border-radius: 20px;
     font-weight:600;
@@ -331,8 +374,10 @@ strong {
 }
 
 .inscreva-se {
-    background-image: linear-gradient(to bottom, #135774 10%,var(--azul-claro));
+    background-color: var(--cor4);
     padding: 60px;
+
+    /* Flexbox */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,6 +387,8 @@ strong {
     width: 700px;
     text-align: center;
     color: white;
+
+    /* Flexbox */
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -357,7 +404,7 @@ strong {
     font-weight: 400;
     text-align: center;
     border-radius: 50px;
-    color: #052E40;
+    color: var(--cor6);
     background-color: white;
     border: 3px solid white;
     width: 306px;
@@ -368,27 +415,29 @@ strong {
 .botao_inscreva-se:hover {
     text-decoration: none;
     color: white;
-    background-color: #054E6C;
+    background-color: var(--cor2);
     transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
 .sessao_contato {
     padding: 5vh;
-    background-color: #105775;
-    margin-bottom: 150px;
+    background-color: var(--cor7);
 }
 
 .contato_container {
+    /* Flexbox */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
 .contato_item {
-    background-color: var(--azul-claro2);
+    background-color: var(--cor5);
     border-radius: 20px;
     text-align: center;
     padding: 20px;
+
+    /* Flexbox */
     flex: 0 0 250px;
 }
 
@@ -401,16 +450,157 @@ strong {
 }
 
 .footer {
-    background-color: var(--azul-escuro);
+    background-color: var(--cor1);
     text-align: center;
     padding: 10px;
     font-size: 0.8em;
 }
 
-.footer strong {
-    color: white;
+footer a:hover {
+        color: var(--cor10);
+}  
+
+@media (max-width: 1300px) {
+
+    .navegacao {
+        padding: 2rem;
+        gap: 40px;
+    }
+
+    .cabecalho {
+        height: 64%;
+    }
+
+    .frase_imagem {
+        flex-direction: column-reverse;
+    }
+    
+    .frase_header {
+        font-size: 2.25rem;
+        margin: 2%;
+    }
+
+    .imagem_cabecalho {
+        width: 75%;
+        margin: 2%;
+    }
+
+    .painel_transparente {
+        flex-direction: column;
+    }
+
+    .imagem_painel_transparente {
+        width: 70%;
+        height: 70%;
+        margin-left: 8%;
+    }
+    
+    .texto_painel_transparente {
+        margin: 2%;
+        gap: 20px;
+    }
+    
+    .texto_painel_transparente h1 {
+        font-size: 32px;
+    }
+
+    .area_pesquisa {
+        flex-direction: column;
+    }
+
+    .conjunto_pesquisa {
+        flex-direction: column;
+        margin: 8%;
+    }
+
+    .painel_fundo_azul {
+        flex-direction: column-reverse;
+    }
+
+    .texto_painel_fundo_azul {
+        margin: 2%;
+    }
+
+    .texto_painel_fundo_azul h1 {
+        font-size: 32px;
+    }
+
+    .imagem_painel_azul {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+
+     .texto_junte_se h2 {
+        width: 600px;
+        margin: auto;
+    }
+
+    .contato_container {
+        gap: 24px;
+        margin: 4%;
+    }
+
+    /* Sessao huawei */
+
+    .imagem_huawei {
+        width: 90%;
+    }
+
+    .huawai_conteudo {
+        flex-direction: column-reverse;
+    }
+
+    .huawai_textos {
+        margin: 2%;
+    }
+
+    /* China conteudo */
+
+    .sessao_china {
+        flex-direction: column-reverse;
+    }
+
+    .imagem_china {
+        width: 90%;
+    }
+
+    .china_conteudo {
+        margin: 2%;
+    }
+    
+    
 }
 
-.footer a:hover {
-    color: var(--azul-claro2);
+
+
+@media (max-width: 600px) {
+
+    .logo_nav {
+        margin-top: 3%;
+    }
+
+    .imagem_cabecalho {
+        width: 150%;
+    }
+
+    .texto_junte_se h1 {
+        width: 230px;
+        margin: auto;
+    }
+
+    .texto_junte_se h2 {
+        width: 350px;
+        margin: auto;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .pesquisa_card {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
