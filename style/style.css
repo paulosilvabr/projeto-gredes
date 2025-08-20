@@ -139,7 +139,7 @@ img {
     top: 0;
     text-align: center;
     /*background-color: var(--cor12);*/
-    background-image: linear-gradient(to bottom, #a8d8eb 20%, var(--cor11));
+    background-image: linear-gradient(to bottom, #c3eeff 20%, var(--cor11));
     padding: 16px;
 
     /* Flexbox */
