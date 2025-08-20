@@ -65,6 +65,7 @@ img {
 #inicio,
 #pesquisa,
 #huawai,
+#premio,
 #coordenadores,
 #inscrevase {
     scroll-margin-top: 100px;
@@ -102,7 +103,7 @@ img {
 
 .cabecalho {
     color: white;
-    background-image: radial-gradient(ellipse, #054E6C 50%, #04394e);
+    background-image: radial-gradient(ellipse, #106e94,#054E6C 70%, #04394e);
     padding: 90px;
 }
 
@@ -129,7 +130,7 @@ img {
     position: sticky;
     top: 0;
     text-align: center;
-    background-image: linear-gradient(to bottom, #c3eeff 20%, #D2E7EF);
+    background-image: linear-gradient(to bottom, #bbe7f8 20%, #D2E7EF);
     padding: 16px;
     display: flex;
     justify-content: center;
@@ -171,7 +172,6 @@ img {
     flex-direction: column;
     padding: 1%;
     gap: 4%;
-    margin: 0 6%;
 }
 
 .paragrafo_texto_transparente {
@@ -181,6 +181,7 @@ img {
 .texto_painel_transparente > h1 {
     font-size: 2em;
     text-align: center;
+    margin-bottom: 30px;
     color: var(--azul-medio);
 }
 
@@ -274,13 +275,12 @@ img {
     display: block;
     margin: auto;
     width: 235px;
-    height: 200px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 
 .sessao_pesquisa {
-    margin: 50px 20px;
+    margin: 50px 20px 100px 20px;
 }
 
 .pesquisa_titulo {
@@ -301,7 +301,7 @@ img {
     border-radius: 20px;
     padding: 20px ;
     background-color: var(--azul-pastel);
-    height: 480px;
+    height: 580px;
     text-align: start;
     flex: 0 1 200px;
     display: flex;
@@ -370,6 +370,7 @@ img {
 .sessao_contato {
     padding: 5vh;
     background-color: #105775;
+    margin-bottom: 150px;
 }
 
 .contato_container {
@@ -399,4 +400,8 @@ img {
     text-align: center;
     padding: 10px;
     font-size: 0.8em;
+}
+
+.footer a:hover {
+    color: var(--azul-claro2);
 }
