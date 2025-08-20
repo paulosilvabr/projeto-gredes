@@ -1,3 +1,10 @@
+/*  
+    =========================
+    MEDIA QUERIES RESPONSIVAS
+    =========================
+*/
+
+/* Até 1200px */
 @media screen and (max-width: 1200px) {
     .navegacao {
         padding: 0.5rem;
@@ -75,12 +82,47 @@
     }
 }
 
+/* Até 1000px */
+@media screen and (max-width: 1000px) {
+    .pesquisa_card {
+        width: 60%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* Até 600px */
 @media screen and (max-width: 600px) {
+    .logo_nav {
+        margin-top: 3%;
+    }
+
     .imagem_cabecalho {
         width: 150%;
     }
 
+    .texto_junte_se h1 {
+        width: 230px;
+        margin: auto;
+    }
+
+    .texto_junte_se h2 {
+        width: 350px;
+        margin: auto;
+    }
+
     footer a:hover {
         color: #c3eeff; /* cor10 inline */
+    }
+}
+
+/* Até 500px */
+@media screen and (max-width: 500px) {
+    .pesquisa_card {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 }
