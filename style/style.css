@@ -7,11 +7,11 @@
 */
 
 :root {
-    --azul-escuro: #032432;   /* antes cor1 */
-    --azul-medio: #066A97;    /* antes cor3 */
-    --azul-claro: #1B7AA2;    /* antes cor4 */
-    --azul-claro2: #ABD7E8;   /* antes cor5 */
-    --azul-pastel: #DEF5FF;   /* antes cor12 */
+    --azul-escuro: #032432;
+    --azul-medio: #066A97;
+    --azul-claro: #1B7AA2;
+    --azul-claro2: #ABD7E8;
+    --azul-pastel: #DEF5FF;
 }
 
 /*  
@@ -60,6 +60,11 @@ p {
 
 img {
     border-radius: 20px;
+}
+
+strong {
+    font-weight: bolder;
+    color: #003f5a;
 }
 
 #inicio,
@@ -326,7 +331,7 @@ img {
 }
 
 .inscreva-se {
-    background-color: var(--azul-claro);
+    background-image: linear-gradient(to bottom, #135774 10%,var(--azul-claro));
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -400,6 +405,10 @@ img {
     text-align: center;
     padding: 10px;
     font-size: 0.8em;
+}
+
+.footer strong {
+    color: white;
 }
 
 .footer a:hover {
